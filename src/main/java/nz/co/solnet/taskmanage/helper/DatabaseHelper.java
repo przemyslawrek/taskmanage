@@ -1,4 +1,4 @@
-package solnet.helper;
+package nz.co.solnet.taskmanage.helper;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

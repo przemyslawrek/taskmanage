@@ -1,4 +1,11 @@
 package nz.co.solnet.taskmanage.task;
 
-public interface TaskRepository extends org.springframework.data.jpa.repository.JpaRepository<nz.co.solnet.taskmanage.task.Task, java.lang.Long> {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Date;
+import java.util.List;
+
+public interface TaskRepository extends JpaRepository<Task, Long> {
+
+    List<Task> findAllByDueDateBefore(Date date);
 }
