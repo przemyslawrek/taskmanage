@@ -42,6 +42,15 @@ If application is running visit http://server:port/context-path/swagger-ui/index
 (Default) [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
 
 ## Implementation notes
+### Tech-stack
+- Java 17
+- Derby DB - embedded DB choosen by Solnet
+- Spring-boot
+- embedded Tomcat server
+- lombok
+- swagger-ui (springdoc-openapi) - for documentation
+- jUnit - for tests
+
 ### Doubts
 - It has been not specified if creation_date should represent being submitted to the system and if so do user should be able to overwrite it. (assumed creation date can come from user but cannot be from future)
 - Should empty title by valid (assumed it shouldn't)
